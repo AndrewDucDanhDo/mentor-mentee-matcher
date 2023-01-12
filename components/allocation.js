@@ -10,9 +10,6 @@ export default function Allocation() {
     <div className={styles.window}>
         <div style={{display: 'inline-flex', justifyContent: 'space-between', marginTop: '2rem'}}>
             <Text h3 style={{marginLeft: '2rem'}} fontWeight="bold">Graduate Buddy Allocation</Text>
-            <Button style={{marginRight: '2rem', borderWidth:"1px"}} rounded bordered color='#010101' variant="outline">
-                <Text>Cancel</Text>
-            </Button>
         </div>
 
         <div style={{display: 'inline-flex', justifyContent: 'center', marginTop: '2rem', paddingLeft: '2rem', paddingRight: '2rem'}}>
