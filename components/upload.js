@@ -1,7 +1,6 @@
 import React from "react";
 import styles from '../styles/Home.module.css'
 
-import { useRouter } from 'next/router'
 import { Text, Button } from "@nextui-org/react";
 
 
@@ -12,9 +11,6 @@ export default function Upload() {
             
         <div style={{display: 'inline-flex', justifyContent: 'space-between', marginTop: '2rem'}}>
             <Text h3 style={{marginLeft: '2rem'}} fontWeight="bold">Graduate Buddy Allocation</Text>
-            <Button style={{marginRight: '2rem', borderWidth:"1px"}} rounded bordered color='#010101' variant="outline" onClick={() => router.back()}>
-                <Text>Cancel</Text>
-            </Button>
         </div>
 
         <div style={{display: 'inline-flex', justifyContent: 'center', marginTop: '2rem', paddingLeft: '2rem', paddingRight: '2rem'}}>
@@ -46,15 +42,13 @@ export default function Upload() {
         </div>
 
         <div className={styles.buttonContainer} style={{display: 'inline-flex', justifyContent: 'center', marginTop: '2rem', paddingLeft: '2rem', paddingRight: '2rem'}}>
-            <Button className={styles.button} style={{borderWidth:"1px"}} rounded bordered size="lg" color='#010101' variant="outline" onClick={() => router.back()}>
+            <Button className={styles.button} style={{borderWidth:"1px"}} rounded bordered size="lg" color='#010101' variant="outline">
                 <Text>Upload Grad Buddy Sheet</Text>
             </Button>
-            <Button className={styles.button}  style={{borderWidth:"1px"}} rounded bordered size="lg" color='#010101' variant="outline" onClick={() => router.back()}>
+            <Button className={styles.button}  style={{borderWidth:"1px"}} rounded bordered size="lg" color='#010101' variant="outline">
                 <Text>Upload Incoming Cohort Sheet</Text>
             </Button>
         </div>
-        
-
         
     </div>
   );
